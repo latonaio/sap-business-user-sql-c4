@@ -1,4 +1,4 @@
-CREATE TABLE `sap_business_user_sql_c4_business_user_collection_data`
+CREATE TABLE `sap_business_user_collection_data`
 (
 	        `ObjectID`                          varchar(70) DEFAULT NULL,
 			`ETag`                              varchar(80) DEFAULT NULL,

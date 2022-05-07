@@ -1,4 +1,4 @@
-CREATE TABLE `sap_business_user_business_user_business_role_assignment_data`
+CREATE TABLE `sap_business_user_business_role_assignment_data`
 (
 		    `ObjectID`            varchar(70) DEFAULT NULL,
 			`ParentObjectID`      varchar(70) DEFAULT NULL,
@@ -7,7 +7,6 @@ CREATE TABLE `sap_business_user_business_user_business_role_assignment_data`
 			`BusinessRoleID`      varchar(255) NOT NULL,
 			`EntityLastChangedOn` varchar(10) DEFAULT NULL,
     PRIMARY KEY (`BusinessRoleID`)
-	CONSTRAINT `SAPBusinessUserBusinessUserRoleAssignmentData_fk` FOREIGN KEY (`BusinessRoleID`) REFERENCES `sap_business_user_sql_c4_business_user_collection_data` (`BusinessRoleID`)
-
+	CONSTRAINT `SAPBusinessUserBusinessRoleAssignmentData_fk` FOREIGN KEY (`BusinessRoleID`) REFERENCES `sap_business_user_collection_data` (`BusinessRoleID`)
 ) ENGINE = InnoDB
  DEFAULT CHARSET = utf8mb4;
