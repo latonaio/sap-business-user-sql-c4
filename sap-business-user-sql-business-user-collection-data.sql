@@ -1,7 +1,7 @@
 CREATE TABLE `sap_business_user_collection_data`
 (
+	        `ObjectID`                          varchar(70) NOT NULL,
 			`UserID`                            varchar(40) NOT NULL,
-	        `ObjectID`                          varchar(70) DEFAULT NULL,
 			`ETag`                              varchar(80) DEFAULT NULL,
 			`EmployeeID`                        varchar(20) DEFAULT NULL,
 			`EmployeeUUID`                      varchar(80) DEFAULT NULL,
@@ -38,6 +38,6 @@ CREATE TABLE `sap_business_user_collection_data`
 			`EntityLastChangedOn`               varchar(80) DEFAULT NULL,
 			`UserChangedBy`                     varchar(480) DEFAULT NULL,
 			`UserChangedOn`                     varchar(80) DEFAULT NULL,                                          
-    PRIMARY KEY (`UserID`)
+    PRIMARY KEY (`ObjectID`, `UserID`)
 ) ENGINE = InnoDB
  DEFAULT CHARSET = utf8mb4;

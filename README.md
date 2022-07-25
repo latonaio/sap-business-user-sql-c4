@@ -1,6 +1,6 @@
 # sap-business-user-sql-c4
 
-sap-business-user-sql-c4は、主にエッジアプリケーションにおいて、SAPと連携されたプロセス指図データを保存するSQLテーブルを作成するためのレポジトリです。  
+sap-business-user-sql-c4は、主にエッジアプリケーションにおいて、SAPと連携されたビジネスユーザデータを保存するSQLテーブルを作成するためのレポジトリです。  
 sap-business-user-sql-c4 は、そのままクラウド環境におけるアプリケーションにも、適用可能です。  
 
 ## 前提条件  
