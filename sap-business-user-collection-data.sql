@@ -1,10 +1,10 @@
 CREATE TABLE `sap_business_user_collection_data`
 (
+			`UserID`                            varchar(40) NOT NULL,
 	        `ObjectID`                          varchar(70) DEFAULT NULL,
 			`ETag`                              varchar(80) DEFAULT NULL,
 			`EmployeeID`                        varchar(20) DEFAULT NULL,
 			`EmployeeUUID`                      varchar(80) DEFAULT NULL,
-			`UserID`                            varchar(40) NOT NULL,
 			`TechnicalUserID`                   varchar(255) DEFAULT NULL,
 			`IdentityUUID`                      varchar(80) DEFAULT NULL,
 			`BusinessPartnerID`                 varchar(10) DEFAULT NULL,
