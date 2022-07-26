@@ -1,4 +1,4 @@
-CREATE TABLE `sap_business_user_collection_data`
+CREATE TABLE `sap_business_user_c4_business_user_collection_data`
 (
 	        `ObjectID`                          varchar(70) NOT NULL,
 			`UserID`                            varchar(40) NOT NULL,

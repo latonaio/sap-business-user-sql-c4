@@ -1,10 +1,10 @@
-CREATE TABLE `sap_business_user_employee_basic_data`
+CREATE TABLE `sap_business_user_c4_employee_basic_data`
 (
 			`ObjectID`                         varchar(70) NOT NULL,
+			`UserID`                           varchar(40) NOT NULL,
 			`EmployeeID`                       varchar(20) NOT NULL,
 			`ETag`                             varchar(80) DEFAULT NULL,
 			`EmployeeUUID`                     varchar(80) DEFAULT NULL,
-			`UserID`                           varchar(40) DEFAULT NULL,
 			`IdentityUUID`                     varchar(80) DEFAULT NULL,
 			`BusinessPartnerID`                varchar(10) DEFAULT NULL,
 			`CurrentInternalEmployeeIndicator` tinyint(1) DEFAULT NULL,
@@ -47,7 +47,7 @@ CREATE TABLE `sap_business_user_employee_basic_data`
 			`ChangedOn`                        varchar(80) DEFAULT NULL,
 			`ChangedBy`                        varchar(480) DEFAULT NULL,
 			`EntityLastChangedOn`              varchar(80) DEFAULT NULL,
-             PRIMARY KEY (`ObjectID`, `EmployeeID`),
-	   	     CONSTRAINT `SAPBusinessUserEmployeeBasicData_fk` FOREIGN KEY (`ObjectID`) REFERENCES `sap_business_user_employee_basic_data` (`ObjectID`)
+             PRIMARY KEY (`ObjectID`, `UserID`, `EmployeeID`),
+	   	     CONSTRAINT `SAPBusinessUserC4EmployeeBasicData_fk` FOREIGN KEY (`ObjectID`) REFERENCES `sap_business_user_c4_business_user_collection_data` (`ObjectID`)
 ) ENGINE = InnoDB
  DEFAULT CHARSET = utf8mb4;

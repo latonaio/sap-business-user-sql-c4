@@ -14,8 +14,8 @@ https://api.sap.com/api/businessuser/overview
 sap-campaign-sql には、sqlの設定ファイルとして、以下のファイルが含まれています。  
 
 * sap-business-user-sql-c4-business-user-collection-data.sql（SAP ビジネスユーザ - ビジネスユーザデータ）  
+* sap-business-user-sql-c4-business-user-role-assignment-data.sql（SAP ビジネスユーザ - ビジネスユーザ役割割当データ）  
 * sap-business-user-sql-c4-employee-basic-data.sql（SAP ビジネスユーザ - 従業員基本情報データ） 
-* sap-business-user-sql-c4-business-role-assignment-data.sql（SAP ビジネスユーザ - ビジネスロール割当データ）  
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法  
 
